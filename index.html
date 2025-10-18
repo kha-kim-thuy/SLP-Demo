@@ -89,7 +89,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Temporal Diffuser: Timing Scale-Aware Modulation for Sign Language Production</h1>
-          <!-- <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a>Kim-Thuy Kha</a><sup>a</sup>,</span>
             <span class="author-block">
@@ -104,8 +104,8 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>a</sup>Faculty of Information Technology, Ton Duc Thang University,</span>
             <span class="author-block"><sup>b</sup>Department of Computer Engineering, Sejong University,</span>
-            <span class="author-block"><sup>a</sup>Department of Software, Sejong University</span>
-          </div> -->
+            <span class="author-block"><sup>c</sup>Department of Software, Sejong University</span>
+          </div>
           <div>
             <div>
               <span class="link-block">
@@ -200,20 +200,20 @@ The 'left' is the generated sign sequenece from SignSAM, the 'right' is the GROU
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in Sign Language Production (SLP) highlight denoising diffusion 
-            models as promising alternatives to traditional autoregressive methods. Most existing 
-            approaches follow a two-stage pipeline that encodes sign motion into discrete latent 
-            codes, often sacrificing spatio-temporal fidelity and requiring gloss annotations or 
-            complex codebooks. Transformer-based models aim to simplify this but often produce 
-            over-smoothed, unnatural motions. We introduce Sign Language Production with Scale-Aware 
-            Modulation SignSAM, a novel single-stage, gloss-free SLP framework that directly 
-            synthesizes motion in continuous space, preserving fine temporal details. At its core is 
-            a Spatio-Temporal U-Net that learns compact temporal features by jointly downscaling frames 
-            and feature dimensions, reducing computational cost. To further enhance temporal precision, 
-            we propose a Timing Scale-Aware Modulation module that fuses multi-scale temporal features 
-            for better motion coherence. Experiments on PHOENIX14T and How2Sign show that SignSAM 
-            achieves state-of-the-art fluency, accuracy, and naturalness, offering an efficient and 
-            expressive solution for SLP.
+            Recent advances in Sign Language Production (SLP) highlight denoising diffusion models as
+            promising alternatives to traditional autoregressive methods. Most existing approaches follow
+            a two-stage pipeline that encodes sign motion into discrete latent codes, often sacrificing
+            Space-Time fidelity and requiring gloss annotations or complex codebooks. Transformer
+            based models aim to simplify this, but often produce overly smooth, unnatural motions.
+            We introduce Sign Language Production with Scale-Aware Modulation (SignSAM), a novel
+            single-stage, gloss-free SLP framework that directly synthesizes motion in continuous space,
+            preserving fine temporal details. At its core is a Space-Time U-Net that learns compact
+            temporalfeatures byjointly downscalingtheframeandsignfeaturedimensions,therebyreducing
+            computational cost compared to a no-pyramid UNet or a pyramid UNet without consistency
+            between dimensions. To further enhance temporal precision, we propose a Timing Scale-Aware
+            Modulation module that fuses multiscale temporal resolutions for better motion coherence.
+            Experiments on PHOENIX14T and How2Sign show that SignSAM achieves state-of-the-art
+            (SOTA)fluency, accuracy, and naturalness, offering an efficient and expressive solution for SLP.
           </p>
         </div>
       </div>
@@ -511,26 +511,42 @@ The 'left' is the generated sign sequenece from SignSAM, the 'right' is the GROU
 </section>
 
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{kathy2025slp,
+  author    = {Kim-Thuy Kha, Anh H. Vo, Van-Vang Le, Oh-Young Song, Yong-Guk Kim},
+  title     = {Temporal Diffuser: Timing Scale-Aware Modulation for Sign Language Production},
+  journal   = {EAAI},
+  year      = {2025},
 }</code></pre>
   </div>
-</section>  -->
+</section> 
 
-<!-- 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      😊😊😊
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</footer> -->
+</footer>
 
 </body>
 </html>
